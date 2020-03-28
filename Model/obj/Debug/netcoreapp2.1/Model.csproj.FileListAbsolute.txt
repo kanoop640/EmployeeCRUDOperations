@@ -9,3 +9,15 @@ C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\Model\obj\Debug\netcore
 C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\Model\obj\Debug\netcoreapp2.1\Model.dll
 C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\Model\obj\Debug\netcoreapp2.1\Model.pdb
 C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\Model\obj\Debug\netcoreapp2.1\Model.genruntimeconfig.cache
+D:\Projects\EmployeeManagement\Model\bin\Debug\netcoreapp2.1\Model.deps.json
+D:\Projects\EmployeeManagement\Model\bin\Debug\netcoreapp2.1\Model.runtimeconfig.json
+D:\Projects\EmployeeManagement\Model\bin\Debug\netcoreapp2.1\Model.runtimeconfig.dev.json
+D:\Projects\EmployeeManagement\Model\bin\Debug\netcoreapp2.1\Model.dll
+D:\Projects\EmployeeManagement\Model\bin\Debug\netcoreapp2.1\Model.pdb
+D:\Projects\EmployeeManagement\Model\obj\Debug\netcoreapp2.1\Model.csprojAssemblyReference.cache
+D:\Projects\EmployeeManagement\Model\obj\Debug\netcoreapp2.1\Model.csproj.CoreCompileInputs.cache
+D:\Projects\EmployeeManagement\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfoInputs.cache
+D:\Projects\EmployeeManagement\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfo.cs
+D:\Projects\EmployeeManagement\Model\obj\Debug\netcoreapp2.1\Model.dll
+D:\Projects\EmployeeManagement\Model\obj\Debug\netcoreapp2.1\Model.pdb
+D:\Projects\EmployeeManagement\Model\obj\Debug\netcoreapp2.1\Model.genruntimeconfig.cache

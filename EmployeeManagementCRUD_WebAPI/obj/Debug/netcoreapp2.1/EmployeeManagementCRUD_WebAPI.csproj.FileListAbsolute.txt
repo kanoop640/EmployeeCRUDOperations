@@ -4,3 +4,28 @@ C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\EmployeeManagementCRUD_
 C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.RazorAssemblyInfo.cs
 C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.AssemblyInfoInputs.cache
 C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.AssemblyInfo.cs
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\bin\Debug\netcoreapp2.1\appsettings.Development.json
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\bin\Debug\netcoreapp2.1\appsettings.json
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\bin\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.deps.json
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\bin\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.runtimeconfig.json
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\bin\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.runtimeconfig.dev.json
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\bin\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.dll
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\bin\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.pdb
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\bin\Debug\netcoreapp2.1\Manager.dll
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\bin\Debug\netcoreapp2.1\Model.dll
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\bin\Debug\netcoreapp2.1\Repository.dll
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\bin\Debug\netcoreapp2.1\Manager.pdb
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\bin\Debug\netcoreapp2.1\Repository.pdb
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\bin\Debug\netcoreapp2.1\Model.pdb
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.csprojAssemblyReference.cache
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.csproj.CoreCompileInputs.cache
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.RazorAssemblyInfo.cache
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.RazorAssemblyInfo.cs
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.AssemblyInfoInputs.cache
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.AssemblyInfo.cs
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.RazorTargetAssemblyInfo.cache
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.csproj.CopyComplete
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.dll
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.pdb
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.genruntimeconfig.cache

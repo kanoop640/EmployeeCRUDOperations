@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7Ut74rhI0wLT1KSDZc4cfJ6Mr/c+riN23F0/vbUQfm7U1rY5ErLCQ7+lJ0zhjeaSIq06vO68+g5ucYRjqzZKyQ==",
+  "dgSpecHash": "KWYjzTAFf0iwSczP8uhE+YmqStU0DyLQI5Vz+0V+4+GPV8zhFzWOqlAVRCtI+nzt83qiQ22cvR7SO9QwxNM1jw==",
   "success": true,
   "projectFilePath": "D:\\Projects\\EmployeeManagement\\EmployeeManagementCRUD_WebAPI\\EmployeeManagementCRUD_WebAPI.csproj",
   "expectedPackageFiles": [
@@ -115,6 +115,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.entityframeworkcore.relational\\2.1.1\\microsoft.entityframeworkcore.relational.2.1.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.entityframeworkcore.sqlserver\\2.1.1\\microsoft.entityframeworkcore.sqlserver.2.1.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.entityframeworkcore.tools\\2.1.1\\microsoft.entityframeworkcore.tools.2.1.1.nupkg.sha512",
+    "C:\\Users\\Anoop Kumar\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.caching.abstractions\\2.1.1\\microsoft.extensions.caching.abstractions.2.1.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.caching.memory\\2.1.1\\microsoft.extensions.caching.memory.2.1.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.caching.sqlserver\\2.1.1\\microsoft.extensions.caching.sqlserver.2.1.1.nupkg.sha512",
@@ -206,8 +207,10 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Anoop Kumar\\.nuget\\packages\\swashbuckle.aspnetcore\\5.2.1\\swashbuckle.aspnetcore.5.2.1.nupkg.sha512",
     "C:\\Users\\Anoop Kumar\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.2.1\\swashbuckle.aspnetcore.swagger.5.2.1.nupkg.sha512",
     "C:\\Users\\Anoop Kumar\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.2.1\\swashbuckle.aspnetcore.swaggergen.5.2.1.nupkg.sha512",
+    "C:\\Users\\Anoop Kumar\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.2.1\\swashbuckle.aspnetcore.swaggerui.5.2.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

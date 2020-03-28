@@ -15,3 +15,20 @@ C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\Manager\obj\Debug\netco
 C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\Manager\obj\Debug\netcoreapp2.1\Manager.dll
 C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\Manager\obj\Debug\netcoreapp2.1\Manager.pdb
 C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\Manager\obj\Debug\netcoreapp2.1\Manager.genruntimeconfig.cache
+D:\Projects\EmployeeManagement\Manager\bin\Debug\netcoreapp2.1\Manager.deps.json
+D:\Projects\EmployeeManagement\Manager\bin\Debug\netcoreapp2.1\Manager.runtimeconfig.json
+D:\Projects\EmployeeManagement\Manager\bin\Debug\netcoreapp2.1\Manager.runtimeconfig.dev.json
+D:\Projects\EmployeeManagement\Manager\bin\Debug\netcoreapp2.1\Manager.dll
+D:\Projects\EmployeeManagement\Manager\bin\Debug\netcoreapp2.1\Manager.pdb
+D:\Projects\EmployeeManagement\Manager\bin\Debug\netcoreapp2.1\Model.dll
+D:\Projects\EmployeeManagement\Manager\bin\Debug\netcoreapp2.1\Repository.dll
+D:\Projects\EmployeeManagement\Manager\bin\Debug\netcoreapp2.1\Model.pdb
+D:\Projects\EmployeeManagement\Manager\bin\Debug\netcoreapp2.1\Repository.pdb
+D:\Projects\EmployeeManagement\Manager\obj\Debug\netcoreapp2.1\Manager.csprojAssemblyReference.cache
+D:\Projects\EmployeeManagement\Manager\obj\Debug\netcoreapp2.1\Manager.csproj.CoreCompileInputs.cache
+D:\Projects\EmployeeManagement\Manager\obj\Debug\netcoreapp2.1\Manager.AssemblyInfoInputs.cache
+D:\Projects\EmployeeManagement\Manager\obj\Debug\netcoreapp2.1\Manager.AssemblyInfo.cs
+D:\Projects\EmployeeManagement\Manager\obj\Debug\netcoreapp2.1\Manager.csproj.CopyComplete
+D:\Projects\EmployeeManagement\Manager\obj\Debug\netcoreapp2.1\Manager.dll
+D:\Projects\EmployeeManagement\Manager\obj\Debug\netcoreapp2.1\Manager.pdb
+D:\Projects\EmployeeManagement\Manager\obj\Debug\netcoreapp2.1\Manager.genruntimeconfig.cache
