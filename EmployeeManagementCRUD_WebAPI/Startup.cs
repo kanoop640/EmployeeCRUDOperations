@@ -32,7 +32,8 @@ namespace EmployeeManagementCRUD_WebAPI
         {
             services.AddDbContextPool<UserDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("UserDbConnection")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddTransient<IEmployeeManger, EmployeeManger>();                         
+            services.AddTransient<IEmployeeManger, EmployeeManger>(); 
+            services.AddTransient<IEmployeeRepository, EmployeeRepository>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
