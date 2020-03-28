@@ -1,0 +1,6 @@
+C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.csprojAssemblyReference.cache
+C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.RazorAssemblyInfo.cache
+C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.RazorAssemblyInfo.cs
+C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.AssemblyInfoInputs.cache
+C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.AssemblyInfo.cs

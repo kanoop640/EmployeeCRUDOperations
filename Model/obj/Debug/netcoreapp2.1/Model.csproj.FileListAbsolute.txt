@@ -1,0 +1,11 @@
+C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\Model\bin\Debug\netcoreapp2.1\Model.deps.json
+C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\Model\bin\Debug\netcoreapp2.1\Model.runtimeconfig.json
+C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\Model\bin\Debug\netcoreapp2.1\Model.runtimeconfig.dev.json
+C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\Model\bin\Debug\netcoreapp2.1\Model.dll
+C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\Model\bin\Debug\netcoreapp2.1\Model.pdb
+C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\Model\obj\Debug\netcoreapp2.1\Model.csproj.CoreCompileInputs.cache
+C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfoInputs.cache
+C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfo.cs
+C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\Model\obj\Debug\netcoreapp2.1\Model.dll
+C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\Model\obj\Debug\netcoreapp2.1\Model.pdb
+C:\Users\Anoop Kumar\OneDrive\Desktop\EmployeeManagement\Model\obj\Debug\netcoreapp2.1\Model.genruntimeconfig.cache
