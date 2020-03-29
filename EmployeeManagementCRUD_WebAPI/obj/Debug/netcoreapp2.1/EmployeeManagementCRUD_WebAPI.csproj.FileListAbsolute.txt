@@ -19,7 +19,6 @@ D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\bin\Debug\netcoreap
 D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\bin\Debug\netcoreapp2.1\Repository.pdb
 D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\bin\Debug\netcoreapp2.1\Model.pdb
 D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.csprojAssemblyReference.cache
-D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.csproj.CoreCompileInputs.cache
 D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.RazorAssemblyInfo.cache
 D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.RazorAssemblyInfo.cs
 D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.AssemblyInfoInputs.cache
@@ -29,3 +28,5 @@ D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreap
 D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.dll
 D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.pdb
 D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.genruntimeconfig.cache
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\obj\Debug\netcoreapp2.1\EmployeeManagementCRUD_WebAPI.csproj.CoreCompileInputs.cache
+D:\Projects\EmployeeManagement\EmployeeManagementCRUD_WebAPI\bin\Debug\netcoreapp2.1\nlog.config

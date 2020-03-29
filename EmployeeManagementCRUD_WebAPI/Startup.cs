@@ -62,10 +62,10 @@ namespace EmployeeManagementCRUD_WebAPI
                 app.UseSwagger();
                 app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "myapi v1"); });
             }
-
             else
             {
                 app.UseHsts();
+                //app.UseStatusCodePagesWithRedirects("/Error/{0}");
             }
             app.UseHttpsRedirection();
             app.UseMvc();

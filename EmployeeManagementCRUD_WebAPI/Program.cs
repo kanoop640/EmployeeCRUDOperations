@@ -1,5 +1,4 @@
-﻿
-// --------------------------------------------------------------------------------------------------------------------
+﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="Program.cs" company="Bridgelabz">
 //   Copyright © 2020 Company="BridgeLabz"
 // </copyright>
@@ -17,6 +16,8 @@ namespace EmployeeManagementCRUD_WebAPI
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.Logging;
+    using NLog.Extensions.Logging;
+
     /// <summary>
     /// It is entry point of project EmployeeManagementCRUD_Operation.
     /// From That Main program project execute
@@ -35,6 +36,14 @@ namespace EmployeeManagementCRUD_WebAPI
           /// <returns></returns>
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+            .ConfigureLogging((hostingContext, logging) =>
+            {
+                logging.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));
+                logging.AddConsole();
+                logging.AddDebug();
+                logging.AddEventSourceLogger();
+                logging.AddNLog();
+            })
                 .UseStartup<Startup>();
     }
 }

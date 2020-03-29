@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KWYjzTAFf0iwSczP8uhE+YmqStU0DyLQI5Vz+0V+4+GPV8zhFzWOqlAVRCtI+nzt83qiQ22cvR7SO9QwxNM1jw==",
+  "dgSpecHash": "oRKgo7IlnX8rF5Ny5Y+eCC0/hn9wBkuezwNhb8yxalA6EpdnnPndwpuX6LIRAGL36T74nQ6qg9yvGaYBMsDV/g==",
   "success": true,
   "projectFilePath": "D:\\Projects\\EmployeeManagement\\EmployeeManagementCRUD_WebAPI\\EmployeeManagementCRUD_WebAPI.csproj",
   "expectedPackageFiles": [
@@ -185,6 +185,9 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
+    "C:\\Users\\Anoop Kumar\\.nuget\\packages\\nlog\\4.6.7\\nlog.4.6.7.nupkg.sha512",
+    "C:\\Users\\Anoop Kumar\\.nuget\\packages\\nlog.extensions.logging\\1.6.0\\nlog.extensions.logging.1.6.0.nupkg.sha512",
+    "C:\\Users\\Anoop Kumar\\.nuget\\packages\\nlog.web.aspnetcore\\4.9.0\\nlog.web.aspnetcore.4.9.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\remotion.linq\\2.2.0\\remotion.linq.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

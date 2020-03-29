@@ -1,0 +1,37 @@
+2020-03-29 15:26:32.6765|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Anoop Kumar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-03-29 15:26:33.4438|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50142/  0
+2020-03-29 15:26:33.4438|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44346/swagger/index.html  
+2020-03-29 15:26:33.4908|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 42.0082ms 200 
+2020-03-29 15:26:33.6774|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 233.3451ms 200 text/html;charset=utf-8
+2020-03-29 15:26:33.9517|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44346/swagger/v1/swagger.json  
+2020-03-29 15:26:34.3940|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 443.7725ms 200 application/json;charset=utf-8
+2020-03-29 15:26:51.9577|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44346/swagger/index  
+2020-03-29 15:26:52.0080|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 50.9142ms 404 
+2020-03-29 15:27:18.5587|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:44346/api/Employee/DeleteEmployee?id=0  
+2020-03-29 15:27:18.6173|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "DeleteEmployee", controller = "Employee"}. Executing controller action with signature Model.Employee DeleteEmployee(Int32) on controller EmployeeManagementCRUD_WebAPI.Controllers.EmployeeController (EmployeeManagementCRUD_WebAPI).
+2020-03-29 15:27:18.8428|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method EmployeeManagementCRUD_WebAPI.Controllers.EmployeeController.DeleteEmployee (EmployeeManagementCRUD_WebAPI) - Validation state: Valid
+2020-03-29 15:27:19.0921|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'UserDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+2020-03-29 15:27:24.5670|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (306ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[ID], [e].[Email], [e].[FirstName], [e].[Gender], [e].[LastName], [e].[Password], [e].[UserName]
+FROM [Employees] AS [e]
+WHERE [e].[ID] = @__get_Item_0
+2020-03-29 15:27:24.6104|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method EmployeeManagementCRUD_WebAPI.Controllers.EmployeeController.DeleteEmployee (EmployeeManagementCRUD_WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 5752.7998ms.
+2020-03-29 15:27:24.6305|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'null'.
+2020-03-29 15:27:24.6420|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action EmployeeManagementCRUD_WebAPI.Controllers.EmployeeController.DeleteEmployee (EmployeeManagementCRUD_WebAPI) in 6014.6239ms
+2020-03-29 15:27:24.6527|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6104.5321ms 204 
+2020-03-29 15:27:39.1144|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:44346/api/Employee/DeleteEmployee?id=0  
+2020-03-29 15:27:39.1232|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "DeleteEmployee", controller = "Employee"}. Executing controller action with signature Model.Employee DeleteEmployee(Int32) on controller EmployeeManagementCRUD_WebAPI.Controllers.EmployeeController (EmployeeManagementCRUD_WebAPI).
+2020-03-29 15:27:39.1232|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method EmployeeManagementCRUD_WebAPI.Controllers.EmployeeController.DeleteEmployee (EmployeeManagementCRUD_WebAPI) - Validation state: Valid
+2020-03-29 15:27:39.1430|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[ID], [e].[Email], [e].[FirstName], [e].[Gender], [e].[LastName], [e].[Password], [e].[UserName]
+FROM [Employees] AS [e]
+WHERE [e].[ID] = @__get_Item_0
+2020-03-29 15:27:39.1430|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method EmployeeManagementCRUD_WebAPI.Controllers.EmployeeController.DeleteEmployee (EmployeeManagementCRUD_WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 13.2892ms.
+2020-03-29 15:27:39.1493|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'null'.
+2020-03-29 15:27:39.1493|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action EmployeeManagementCRUD_WebAPI.Controllers.EmployeeController.DeleteEmployee (EmployeeManagementCRUD_WebAPI) in 26.4904ms
+2020-03-29 15:27:39.1493|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 44.584ms 204 
+2020-03-29 15:28:52.3230|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PUT http://localhost:44346/api/Employee/UpdateEmployee application/json-patch+json 150
+2020-03-29 15:28:52.4131|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "UpdateEmployee", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateEmployee(Model.Employee) on controller EmployeeManagementCRUD_WebAPI.Controllers.EmployeeController (EmployeeManagementCRUD_WebAPI).
+2020-03-29 15:28:52.6543|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2020-03-29 15:28:52.7018|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action EmployeeManagementCRUD_WebAPI.Controllers.EmployeeController.UpdateEmployee (EmployeeManagementCRUD_WebAPI) in 282.1757ms
+2020-03-29 15:28:52.7018|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 381.6796ms 400 application/json; charset=utf-8
