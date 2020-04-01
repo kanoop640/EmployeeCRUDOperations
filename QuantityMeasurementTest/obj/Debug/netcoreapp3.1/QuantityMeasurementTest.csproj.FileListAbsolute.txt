@@ -1,0 +1,4 @@
+D:\Projects\QuantityMeasurement\QuantityMeasurementTest\obj\Debug\netcoreapp3.1\QuantityMeasurementTest.csprojAssemblyReference.cache
+D:\Projects\QuantityMeasurement\QuantityMeasurementTest\obj\Debug\netcoreapp3.1\QuantityMeasurementTest.csproj.CoreCompileInputs.cache
+D:\Projects\QuantityMeasurement\QuantityMeasurementTest\obj\Debug\netcoreapp3.1\QuantityMeasurementTest.AssemblyInfoInputs.cache
+D:\Projects\QuantityMeasurement\QuantityMeasurementTest\obj\Debug\netcoreapp3.1\QuantityMeasurementTest.AssemblyInfo.cs
