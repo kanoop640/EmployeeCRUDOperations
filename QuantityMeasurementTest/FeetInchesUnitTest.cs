@@ -14,5 +14,12 @@ namespace QuantityMeasurementTest
             Assert.AreEqual(inch.GetValue(), feetIntoInches.FeetToInchConverter(feet).GetValue());
 
         }
+        [Test]
+        public void NullReference_Value()
+        {
+            Feet feet = new Feet(1);
+            var var = 2.1;
+            feet.Equals();
+        }
     }
 }
