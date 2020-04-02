@@ -43,5 +43,15 @@ namespace QuantityMeasurementTest
             Feet feet = new Feet(2);
             Assert.IsTrue(feet.ConverteToFeet(feet));
         }
+        /// <summary>
+        /// Checking The type of value
+        /// </summary>
+        [Test]
+        public void Checking_Value_Type()
+        {
+            Feet feet = new Feet(2);
+            var val1 = 3;
+            Assert.IsTrue(feet.Equals(val1));
+        }
     }
 }
