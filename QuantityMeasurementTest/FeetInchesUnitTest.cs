@@ -1,8 +1,8 @@
-﻿using NUnit.Framework;
-using QuantatyMeasurement;
-
+﻿
 namespace QuantityMeasurementTest
 {
+    using NUnit.Framework;
+    using QuantatyMeasurement;
     public class FeetInchesUnitTest
     {
         [Test]
@@ -15,11 +15,10 @@ namespace QuantityMeasurementTest
 
         }
         [Test]
-        public void NullReference_Value()
+        public void NullReference_Value_Equals()
         {
             Feet feet = new Feet(1);
-            var var = 2.1;
-            feet.Equals();
+            Assert.IsFalse(feet.Equals(null));
         }
     }
 }
