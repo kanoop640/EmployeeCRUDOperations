@@ -53,5 +53,15 @@ namespace QuantityMeasurementTest
             var val1 = 3;
             Assert.IsTrue(feet.Equals(val1));
         }
+        /// <summary>
+        /// Method for Checking the value of  feet type
+        /// </summary>
+        [Test]
+        public void Checking_Values_Equality()
+        {
+            Feet feet = new Feet(5);
+            Feet feet1 = new Feet(5);
+            Assert.IsTrue(feet.ConverteToFeet(feet1));
+        }
     }
 }
