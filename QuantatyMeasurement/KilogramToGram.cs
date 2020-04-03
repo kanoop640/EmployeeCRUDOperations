@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="YardToFeet.cs" company="Bridgelabz">
+// <copyright file="KilogramToGram.cs" company="Bridgelabz">
 //   Copyright © 2020 Company="BridgeLabz"
 // </copyright>
 // <creator name="Anoop kumar"/>
@@ -9,25 +9,18 @@ namespace QuantatyMeasurement
     using System;
     using System.Collections.Generic;
     using System.Text;
-    public class YardToFeet
+    public class KilogramToGram
     {
-        public Feet Converte_Yard_To_Feet(Yard yard)
-        {
-            var yardToFeet = yard.GetValue() * 3;
-            var feetValue = new Feet(yardToFeet);
-            return feetValue;
-        }
-
         /// <summary>
-        /// This method is checking the equality of feet and yard value
+        /// Checking the equality of Kilogram and gram
         /// </summary>
-        /// <param name="feetValue"></param>
-        /// <param name="yardValue"></param>
+        /// <param name="kilogram"></param>
+        /// <param name="gram"></param>
         /// <returns></returns>
-        public bool? Checking_Yard_And_Feet_Value_Equality(Feet feetValue, Yard yardValue)
+        public bool Checking_Equality_Kilogram_To_Gram(Kilogram kilogram,Gram gram)
         {
-            var value = yardValue.GetValue() * 3;
-            if (feetValue.GetValue() == value)
+            var value = kilogram.GetValue() * 1000;
+            if (gram.GetValue() == value)
             {
                 return true;
             }

@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Yard.cs" company="Bridgelabz">
+// <copyright file="Kilogram.cs" company="Bridgelabz">
 //   Copyright © 2020 Company="BridgeLabz"
 // </copyright>
 // <creator name="Anoop kumar"/>
@@ -9,17 +9,16 @@ namespace QuantatyMeasurement
     using System;
     using System.Collections.Generic;
     using System.Text;
-    public class Yard
+    public class Kilogram
     {
-        int yard;
-        public Yard(int yard)
+        int kilogram;
+        public Kilogram(int kilogram)
         {
-            this.yard = yard;
+            this.kilogram = kilogram;
         }
         public int GetValue()
         {
-            return this.yard;
+            return this.kilogram;
         }
-        
     }
 }

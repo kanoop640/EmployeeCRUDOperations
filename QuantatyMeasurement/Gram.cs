@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="YardToFeet.cs" company="Bridgelabz">
+// <copyright file="Gram.cs" company="Bridgelabz">
 //   Copyright © 2020 Company="BridgeLabz"
 // </copyright>
 // <creator name="Anoop kumar"/>
@@ -9,25 +9,25 @@ namespace QuantatyMeasurement
     using System;
     using System.Collections.Generic;
     using System.Text;
-    public class YardToFeet
+    public class Gram
     {
-        public Feet Converte_Yard_To_Feet(Yard yard)
+        int gram;
+        public Gram(int gram)
         {
-            var yardToFeet = yard.GetValue() * 3;
-            var feetValue = new Feet(yardToFeet);
-            return feetValue;
+            this.gram = gram;
         }
-
-        /// <summary>
-        /// This method is checking the equality of feet and yard value
-        /// </summary>
-        /// <param name="feetValue"></param>
-        /// <param name="yardValue"></param>
-        /// <returns></returns>
-        public bool? Checking_Yard_And_Feet_Value_Equality(Feet feetValue, Yard yardValue)
+        public int GetValue()
         {
-            var value = yardValue.GetValue() * 3;
-            if (feetValue.GetValue() == value)
+            return this.gram;
+        }
+        /// <summary>
+        /// This method is checking the gram equality
+        /// </summary>
+        /// <param name="gram"></param>
+        /// <returns></returns>
+        public bool Checking_Equality_Of_Grams(Gram gram)
+        {
+            if (this.gram == gram.GetValue())
             {
                 return true;
             }
