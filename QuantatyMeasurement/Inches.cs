@@ -48,7 +48,7 @@ namespace QuantatyMeasurement
          /// </summary>
          /// <param name="inches"></param>
          /// <returns></returns>
-        public bool? ConverteToInch(Inches inches)
+        public bool? Cheking_Inch_Values_Equality(Inches inches)
         {
             if (this.inch.Equals(inches.inch))
                 return true;

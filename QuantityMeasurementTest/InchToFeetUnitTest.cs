@@ -40,7 +40,7 @@ namespace QuantityMeasurementTest
         public void Reference_Type_Inch_Value_Equal()
         {
             Inches inch = new Inches(2);
-            Assert.IsTrue(inch.ConverteToInch(inch));
+            Assert.IsTrue(inch.Cheking_Inch_Values_Equality(inch));
         }
         /// <summary>
         /// Checking The type of value
@@ -60,7 +60,17 @@ namespace QuantityMeasurementTest
         {
             Inches inch = new Inches(0);
             Inches inch1 = new Inches(0);
-            Assert.IsTrue(inch.ConverteToInch(inch1));
+            Assert.IsTrue(inch.Cheking_Inch_Values_Equality(inch1));
+        }
+        /// <summary>
+        /// This method for checking 1 inch and 2 inch is not equal
+        /// </summary>
+        [Test]
+        public void Checking_Diffrent_Feet_Value()
+        {
+            var val1 = new Inches(1);
+            var val2 = new Inches(2);
+            Assert.IsFalse(val1.Cheking_Inch_Values_Equality(val2));
         }
     }
 }
