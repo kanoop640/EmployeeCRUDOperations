@@ -42,5 +42,15 @@ namespace QuantityMeasurementTest
             Inches inch = new Inches(2);
             Assert.IsTrue(inch.ConverteToInch(inch));
         }
+        /// <summary>
+        /// Checking The type of value
+        /// </summary>
+        [Test]
+        public void Checking_Value_Type()
+        {
+            Inches inch = new Inches(2);
+            var val1 = 3;
+            Assert.IsTrue(inch.Equals(val1));
+        }
     }
 }
