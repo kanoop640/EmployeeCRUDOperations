@@ -23,7 +23,6 @@ namespace QuantityMeasurementTest
             FeetIntoInches feetIntoInches = new FeetIntoInches();
             Inches inch = feetIntoInches.FeetToInchConverter(feet);
             Assert.AreEqual(inch.GetValue(), feetIntoInches.FeetToInchConverter(feet).GetValue());
-
         }
         /// <summary>
         /// Method for checking value type in feet
@@ -59,9 +58,19 @@ namespace QuantityMeasurementTest
         [Test]
         public void Checking_Values_Equality()
         {
-            Feet feet = new Feet(5);
-            Feet feet1 = new Feet(5);
+            Feet feet = new Feet(0);
+            Feet feet1 = new Feet(0);
             Assert.IsTrue(feet.ConverteToFeet(feet1));
+        }
+        /// <summary>
+        /// This method for checking 1ft and 2ft is not equal
+        /// </summary>
+        [Test]
+        public void Checking_Diffrent_Feet_Value()
+        {
+            var val1 = new Feet(1);
+            var val2 = new Feet(2);
+            Assert.IsFalse(val1.ConverteToFeet(val2));
         }
     }
 }
