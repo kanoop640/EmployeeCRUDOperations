@@ -52,5 +52,15 @@ namespace QuantityMeasurementTest
             var val1 = 3;
             Assert.IsTrue(inch.Equals(val1));
         }
+        /// <summary>
+        /// Method for Checking the value of  0 inch  and 0 inch
+        /// </summary>
+        [Test]
+        public void Checking_Values_Equality()
+        {
+            Inches inch = new Inches(0);
+            Inches inch1 = new Inches(0);
+            Assert.IsTrue(inch.ConverteToInch(inch1));
+        }
     }
 }
