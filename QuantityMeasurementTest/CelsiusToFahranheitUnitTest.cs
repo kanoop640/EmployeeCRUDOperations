@@ -44,5 +44,16 @@ namespace QuantityMeasurementTest
             Celsius celsius1 = new Celsius(2);
             Assert.IsFalse(celsius.Cheching_Equality_Of_Celsius_Value(celsius1));
         }
+        /// <summary>
+        /// This method is checking the value of Celsius and fahranheit
+        /// </summary>
+        [Test]
+        public void Checking_Equality_Of_Celsius_And_Not_Equal_Fahranheit_Value()
+        {
+            Celsius celsius = new Celsius(1);
+            Fahranheit fahranheit = new Fahranheit(50);
+            CelsiusToFahrenheit celsiusToFahrenheit = new CelsiusToFahrenheit();
+            Assert.IsFalse(celsiusToFahrenheit.Checking_Equality_Of_Celsius_And_Fahrenheit_Value(celsius, fahranheit));
+        }
     }
 }
