@@ -17,11 +17,22 @@ namespace QuantityMeasurementTest
         /// This Test case is checking that 1gram is equal to 1gram
         /// </summary>
         [Test]
-        public void Checking_Equality_Of_Gram()
+        public void Checking_Equality_Of_Same_Gram_Value()
         {
             var gram1 = new Gram(1);
             var gram2 = new Gram(1);
             Assert.IsTrue(gram1.GetValue().Equals(gram2.GetValue()));
+
+        }
+        /// <summary>
+        /// This Test case is checking that 1gram is equal to 2gram
+        /// </summary>
+        [Test]
+        public void Checking_Equality_Of_Different_Grams_Value()
+        {
+            var gram1 = new Gram(1);
+            var gram2 = new Gram(2);
+            Assert.IsFalse(gram1.GetValue().Equals(gram2.GetValue()));
 
         }
         /// <summary>
