@@ -43,5 +43,17 @@ namespace QuantatyMeasurement
             else
                 return true;
         }
+         /// <summary>
+         /// This method for checking Inche value are equal or not
+         /// </summary>
+         /// <param name="inches"></param>
+         /// <returns></returns>
+        public bool? ConverteToInch(Inches inches)
+        {
+            if (this.inch.Equals(inches.inch))
+                return true;
+            else
+                return false;
+        }
     }
 }

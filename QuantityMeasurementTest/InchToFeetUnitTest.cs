@@ -33,6 +33,14 @@ namespace QuantityMeasurementTest
             Inches inches = new Inches(12);
             Assert.IsFalse(inches.Equals(null));
         }
-
+        /// <summary>
+        /// Method for Checking feet Reference value
+        /// </summary>
+        [Test]
+        public void Reference_Type_Inch_Value_Equal()
+        {
+            Inches inch = new Inches(2);
+            Assert.IsTrue(inch.ConverteToInch(inch));
+        }
     }
 }
