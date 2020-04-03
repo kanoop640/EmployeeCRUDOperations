@@ -24,6 +24,16 @@ namespace QuantityMeasurementTest
             Assert.IsTrue(gram1.GetValue().Equals(gram2.GetValue()));
 
         }
-    
+        /// <summary>
+        /// Checking the equality of 1 kilogram and 1000 gram
+        /// </summary>
+        [Test]
+        public void Checking_Equality_Of_Kilogram_And_Gram()
+        {
+            Kilogram kilogram = new Kilogram(1);
+            Gram gram = new Gram(1000);
+            KilogramToGram kilogramToGram = new KilogramToGram();
+            Assert.IsTrue(kilogramToGram.Checking_Equality_Kilogram_To_Gram(kilogram, gram));
+        }
     }
 }
