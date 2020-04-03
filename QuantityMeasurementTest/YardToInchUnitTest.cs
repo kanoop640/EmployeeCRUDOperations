@@ -19,5 +19,16 @@ namespace QuantityMeasurementTest
             YardToInch yardToInch = new YardToInch();
             Assert.IsFalse(yardToInch.Checking_Equality_Of_Yard_And_Inch(yard, inches));
         }
+        /// <summary>
+        /// This is checking that 1 Yard and 36 Inch equality
+        /// </summary>
+        [Test]
+        public void Checking_1Yard_And_36Inch_Equality()
+        {
+            Inches inches = new Inches(36);
+            Yard yard = new Yard(1);
+            YardToInch yardToInch = new YardToInch();
+            Assert.IsTrue(yardToInch.Checking_Equality_Of_Yard_And_Inch(yard, inches));
+        }
     }
 }
