@@ -72,5 +72,27 @@ namespace QuantityMeasurementTest
             var val2 = new Feet(2);
             Assert.IsFalse(val1.ConverteToFeet(val2));
         }
+        /// <summary>
+        /// This method for checking Feet and Inch value 
+        /// </summary>
+        [Test]
+        public void Checking_Feet_And_Inch_Value_Equality()
+        {
+            var feetValue = new Feet(1);
+            var inchValue = new Inches(12);
+            FeetIntoInches feetIntoInches = new FeetIntoInches();
+            Assert.IsTrue(feetIntoInches.Checking_Feet_And_Inch_Value_Equality(feetValue, inchValue));
+        }
+        /// <summary>
+        /// Method for checking 1ft is not equalt to 24 inch
+        /// </summary>
+        [Test]
+        public void Checking_Feet_And_Inch_Value_Not_Equality()
+        {
+            var feetValue = new Feet(1);
+            var inchValue = new Inches(24);
+            FeetIntoInches feetIntoInches = new FeetIntoInches();
+            Assert.IsFalse(feetIntoInches.Checking_Feet_And_Inch_Value_Equality(feetValue, inchValue));
+        }
     }
 }

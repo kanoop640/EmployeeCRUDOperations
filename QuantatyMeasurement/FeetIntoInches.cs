@@ -22,5 +22,20 @@ namespace QuantatyMeasurement
             Inches inch = new Inches(a);
             return inch;
         }
+        /// <summary>
+        /// This method for checking Feet value is equal to inch value or not
+        /// </summary>
+        /// <param name="feet"></param>
+        /// <param name="inch"></param>
+        /// <returns></returns>
+        public bool Checking_Feet_And_Inch_Value_Equality(Feet feet,Inches inch)
+        {
+            var feetToInch = feet.GetValue() * 12;
+            if (inch.GetValue() == feetToInch)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
