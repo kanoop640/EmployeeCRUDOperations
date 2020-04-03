@@ -34,5 +34,15 @@ namespace QuantityMeasurementTest
             CelsiusToFahrenheit celsiusToFahrenheit = new CelsiusToFahrenheit();
             Assert.IsTrue(celsiusToFahrenheit.Checking_Equality_Of_Celsius_And_Fahrenheit_Value(celsius, fahranheit));
         }
+        /// <summary>
+        /// Checking the equality of two celsius value
+        /// </summary>
+        [Test]
+        public void Checking_Equality_Of_Diffrent_Celsius_Value()
+        {
+            Celsius celsius = new Celsius(1);
+            Celsius celsius1 = new Celsius(2);
+            Assert.IsFalse(celsius.Cheching_Equality_Of_Celsius_Value(celsius1));
+        }
     }
 }
