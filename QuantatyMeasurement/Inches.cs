@@ -31,5 +31,17 @@ namespace QuantatyMeasurement
         {
             return this.inch;
         }
+        /// <summary>
+        /// Checking object equality of null type
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public override bool Equals(object obj)
+        {
+            if (obj == null || !this.inch.GetType().Equals(obj.GetType()))
+                return false;
+            else
+                return true;
+        }
     }
 }

@@ -24,6 +24,15 @@ namespace QuantityMeasurementTest
             var feetValue=inchToFeet.Convering_Inch_To_Feet(inches);
             Assert.AreEqual(feetValue.GetValue(), 1);
         }
+        /// <summary>
+        /// Checking Null Value and it return false if value is null
+        /// </summary>
+        [Test]
+        public void Checking_NullRefrence_Value()
+        {
+            Inches inches = new Inches(12);
+            Assert.IsFalse(inches.Equals(null));
+        }
 
     }
 }
