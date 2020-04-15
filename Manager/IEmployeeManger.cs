@@ -22,5 +22,6 @@ namespace Manager
         Task<int> AddEmployee(Employee employee);
         Task<int> UpdateEmployee(Employee employeeChanges);
         Employee DeleteEmployee(int id);
+        bool LoginEmployee(string email, string password);
     }
 }

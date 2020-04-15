@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagementCRUD_WebAPI", "EmployeeManagementCRUD_WebAPI.csproj", "{68DE3820-5BB9-45C3-A606-70E0A877679F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagementCRUD_WebAPI", "EmployeeManagementCRUD_WebAPI.csproj", "{68DE3820-5BB9-45C3-A606-70E0A877679F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "..\Model\Model.csproj", "{19CF5689-2C24-4508-B9CB-D9CF2C88FC5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "..\Model\Model.csproj", "{19CF5689-2C24-4508-B9CB-D9CF2C88FC5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "..\Repository\Repository.csproj", "{80C0B4AB-CEDA-47BA-ABCD-177B79E2F4B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "..\Repository\Repository.csproj", "{80C0B4AB-CEDA-47BA-ABCD-177B79E2F4B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manager", "..\Manager\Manager.csproj", "{AE4EEC74-8608-4A3F-81D4-B00E3BF023BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Manager", "..\Manager\Manager.csproj", "{AE4EEC74-8608-4A3F-81D4-B00E3BF023BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

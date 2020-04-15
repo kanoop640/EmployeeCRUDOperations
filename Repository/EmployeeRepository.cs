@@ -10,6 +10,7 @@ namespace Repository
     using Repository.Context;
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
     public class EmployeeRepository :IEmployeeRepository
@@ -27,11 +28,9 @@ namespace Repository
         /// <returns></returns>
         public Task<int> AddEmployee(Employee employee)
         {
-
             userDBContext.Employees.Add(employee);
             var result = userDBContext.SaveChangesAsync();
             return result;
-
         }
         /// <summary>
         /// It is for deleting the employee from database
@@ -77,6 +76,24 @@ namespace Repository
             employee.State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             var result = userDBContext.SaveChangesAsync();
             return result;
+        }
+        /// <summary>
+        /// Login for employee with email and password
+        /// </summary>
+        /// <param name="email"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        public bool LoginEmployee(string email,string password)
+        {
+            var result = userDBContext.Employees.Where(id => id.Email == email && id.Password == password);
+            if (result != null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

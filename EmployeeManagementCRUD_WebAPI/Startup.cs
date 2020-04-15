@@ -24,6 +24,7 @@ namespace EmployeeManagementCRUD_WebAPI
     using Microsoft.OpenApi.Models;
     using Repository;
     using Repository.Context;
+    using System.Net.Http;
     
     public class Startup
     {
@@ -65,10 +66,16 @@ namespace EmployeeManagementCRUD_WebAPI
             else
             {
                 app.UseHsts();
-                //app.UseStatusCodePagesWithRedirects("/Error/{0}");
             }
+            app.UseStaticFiles();
             app.UseHttpsRedirection();
-            app.UseMvc();
+            app.UseMvc(routes => {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=EmployeeController}/{action=LoginEmployee}/{id?}"
+                    );
+            });
+            
         }
     }
 }

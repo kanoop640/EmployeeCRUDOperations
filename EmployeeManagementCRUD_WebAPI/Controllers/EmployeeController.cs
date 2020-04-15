@@ -63,5 +63,16 @@ namespace EmployeeManagementCRUD_WebAPI.Controllers
         {
             return this.manager.GetEmployee(id);
         }
+        [Route("LoginEmployee")]
+        [HttpPost]
+        public IActionResult LoginEmployee(string email,string password)
+        {
+            var result = this.manager.LoginEmployee(email, password);
+            if (result == true)
+            {
+                return this.Ok(email);
+            }
+            return this.BadRequest();
+        }
     }
 }

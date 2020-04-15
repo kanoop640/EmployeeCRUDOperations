@@ -59,6 +59,17 @@ namespace Manager
             return this.repo.GetEmployee(id);
         }
         /// <summary>
+        /// This method is for checking the email id and password is correct or not 
+        /// </summary>
+        /// <param name="email"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        public bool LoginEmployee(string email, string password)
+        {
+            return this.repo.LoginEmployee(email, password);
+        }
+
+        /// <summary>
         /// For updating the employee details
         /// </summary>
         /// <param name="employeeChanges"></param>
