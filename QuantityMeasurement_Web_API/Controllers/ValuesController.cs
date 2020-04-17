@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using QuantityMeasurement_Web_API.Model;
+using QuantityMeasurement_Web_API.Repository;
 
 namespace QuantityMeasurement_Web_API.Controllers
 {
@@ -40,6 +42,16 @@ namespace QuantityMeasurement_Web_API.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+        }
+
+        [Route("FeetToInch")]
+        [HttpGet]
+        public double FeetToInchCoverter(double value)
+        {
+            Feet feetValue = new Feet(value);
+            FeetToInche feetToInche = new FeetToInche();
+             var inchValue=feetToInche.FeetToInchConverter(feetValue);
+            return inchValue.GetValue();
         }
     }
 }
