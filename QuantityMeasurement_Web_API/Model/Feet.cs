@@ -6,6 +6,7 @@
 // --------------------------------------------------------------------------------------------------------------------
 namespace QuantityMeasurement_Web_API.Model
 {
+    using Newtonsoft.Json.Linq;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -16,6 +17,7 @@ namespace QuantityMeasurement_Web_API.Model
         /// feet variable
         /// </summary>
         double feet;
+
         /// <summary>
         /// constructor for setting the value of feet
         /// </summary>
@@ -24,6 +26,7 @@ namespace QuantityMeasurement_Web_API.Model
         {                                                                                      
             this.feet = feet;
         }
+
         /// <summary>
         /// Getting the value of feet
         /// </summary>
@@ -31,30 +34,6 @@ namespace QuantityMeasurement_Web_API.Model
         public double GetValue()
         {
             return this.feet;
-        }
-        /// <summary>
-        /// Overring Equals method and checking value type
-        /// </summary>
-        /// <param name="obj"></param>
-        /// <returns></returns>
-        public override bool Equals(object obj)
-        {
-            if (obj == null || !this.feet.GetType().Equals(obj.GetType()))
-                return false;
-            else
-                return true;
-        }
-        /// <summary>
-        /// Checking reference value of feet
-        /// </summary>
-        /// <param name="feet"></param>
-        /// <returns></returns>
-        public bool CheckingEqualityOfFeetTypeValue(Feet feet)
-        {
-            if (this.feet.Equals(feet.feet))
-                return true;
-            else
-                return false;
         }
     }
 }

@@ -16,26 +16,13 @@ namespace QuantityMeasurement_Web_API.Model
         /// Variable for gram value
         /// </summary>
         double gram;
-        public Gram(int gram)
+        public Gram(double gram)
         {
             this.gram = gram;
         }
         public double GetValue()
         {
             return this.gram;
-        }
-        /// <summary>
-        /// This method is checking the gram equality
-        /// </summary>
-        /// <param name="gram"></param>
-        /// <returns></returns>
-        public bool Checking_Equality_Of_Grams(Gram gram)
-        {
-            if (this.gram == gram.GetValue())
-            {
-                return true;
-            }
-            return false;
         }
     }
 }

@@ -32,29 +32,5 @@ namespace QuantityMeasurement_Web_API.Model
         {
             return this.inch;
         }
-        /// <summary>
-        /// Checking object equality of null type
-        /// </summary>
-        /// <param name="obj"></param>
-        /// <returns></returns>
-        public override bool Equals(object obj)
-        {
-            if (obj == null || !this.inch.GetType().Equals(obj.GetType()))
-                return false;
-            else
-                return true;
-        }
-        /// <summary>
-        /// This method for checking Inche value are equal or not
-        /// </summary>
-        /// <param name="inches"></param>
-        /// <returns></returns>
-        public bool? Cheking_Inch_Values_Equality(Inches inches)
-        {
-            if (this.inch.Equals(inches.inch))
-                return true;
-            else
-                return false;
-        }
     }
 }

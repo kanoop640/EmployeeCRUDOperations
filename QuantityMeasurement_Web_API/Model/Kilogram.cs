@@ -16,7 +16,7 @@ namespace QuantityMeasurement_Web_API.Model
         /// Variable for kilogram value
         /// </summary>
         double kilogram;
-        public Kilogram(int kilogram)
+        public Kilogram(double kilogram)
         {
             this.kilogram = kilogram;
         }

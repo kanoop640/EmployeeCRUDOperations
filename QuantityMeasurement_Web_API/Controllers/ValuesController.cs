@@ -12,46 +12,68 @@ namespace QuantityMeasurement_Web_API.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+        private readonly IConverter _converter;
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public ValuesController(IConverter converter)
         {
-            return "value";
-        }
-
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            _converter = converter;
         }
 
         [Route("FeetToInch")]
-        [HttpGet]
-        public double FeetToInchCoverter(double value)
+        [HttpPost]
+        public ActionResult<double> FeetToInchCoverter(Feet value)
         {
-            Feet feetValue = new Feet(value);
-            FeetToInche feetToInche = new FeetToInche();
-             var inchValue=feetToInche.FeetToInchConverter(feetValue);
+            var inchValue = _converter.FeetToInchConverter(value);
             return inchValue.GetValue();
+        }
+        [Route("InchToFeet")]
+        [HttpPost]
+        public ActionResult<double> InchToFeethCoverter(Inches inch)
+        {
+            var feetValue = _converter.InchToFeetConverter(inch);
+            return feetValue.GetValue();
+        }
+        [Route("YardToFeet")]
+        [HttpPost]
+        public ActionResult<double> YardToFeetConveter(Yard yard)
+        {
+            var feetValue = _converter.YardToFeetConverter(yard);
+            return feetValue.GetValue();
+        }
+        [Route("YardtoInch")]
+        [HttpPost]
+        public ActionResult<double> YardToInchConverter(Yard yard)
+        {
+            var inchValue = _converter.YardToInchConverter(yard);
+            return inchValue.GetValue();
+        }
+        [Route("KilogramToGram")]
+        [HttpPost]
+        public ActionResult<double> KilogramToGramConverter(Kilogram kilogram)
+        {
+            var gramValue = _converter.KilogramToGramConverter(kilogram);
+            return gramValue.GetValue();
+        }
+        [Route("GramToKilogram")]
+        [HttpPost]
+        public ActionResult<double> GramToKilogramConverter(Gram gram)
+        {
+            var kilogramValue = _converter.GramToKilogramConverter(gram);
+            return kilogramValue.GetValue();
+        }
+        [Route("CelsiusToFahrenheit")]
+        [HttpPost]
+        public ActionResult<double> CelsiusToFahrenheitConverter(Celsius celsius)
+        {
+            var fahrenheitValue = _converter.CelsiusToFahrenheitConverter(celsius);
+            return fahrenheitValue.GetValue();
+        }
+        [Route("FahrenheitToCelsius")]
+        [HttpPost]
+        public ActionResult<double> FahrenheittoCelsiusConverter(Fahranheit fahranheit)
+        {
+            var celsiusValue = _converter.FahrenheitToCelsiusCoverter(fahranheit);
+            return celsiusValue.GetValue();
         }
     }
 }
