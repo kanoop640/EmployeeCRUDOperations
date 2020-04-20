@@ -44,6 +44,7 @@ namespace EmployeeManagementCRUD_WebAPI
                 logging.AddEventSourceLogger();
                 logging.AddNLog();
             })
-                .UseStartup<Startup>();
+            .UseKestrel()
+            .UseStartup<Startup>();
     }
 }
