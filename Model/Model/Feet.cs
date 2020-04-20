@@ -1,36 +1,38 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Inches.cs" company="Bridgelabz">
+// <copyright file="Feet.cs" company="Bridgelabz">
 //   Copyright © 2020 Company="BridgeLabz"
 // </copyright>
 // <creator name="Anoop kumar"/>
 // --------------------------------------------------------------------------------------------------------------------
-namespace QuantityMeasurement_Web_API.Model
+namespace Model
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
-    public class Inches
+    public class Feet
     {
         /// <summary>
-        /// inch variable
+        /// feet variable
         /// </summary>
-        double inch;
+        double feet;
+
         /// <summary>
-        /// constructor of set value of inch variable
+        /// constructor for setting the value of feet
         /// </summary>
-        /// <param name="inch"></param>
-        public Inches(double inch)
-        {
-            this.inch = inch;
+        /// <param name="feet"></param>
+        public Feet(double feet)
+        {                                                                                      
+            this.feet = feet;
         }
+
         /// <summary>
-        /// Getting value of inch
+        /// Getting the value of feet
         /// </summary>
         /// <returns></returns>
         public double GetValue()
         {
-            return this.inch;
+            return this.feet;
         }
     }
 }

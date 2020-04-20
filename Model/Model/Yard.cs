@@ -1,28 +1,25 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Kilogram.cs" company="Bridgelabz">
+// <copyright file="Yard.cs" company="Bridgelabz">
 //   Copyright © 2020 Company="BridgeLabz"
 // </copyright>
 // <creator name="Anoop kumar"/>
 // --------------------------------------------------------------------------------------------------------------------
-namespace QuantityMeasurement_Web_API.Model
+namespace Model
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
-    public class Kilogram
+    public class Yard
     {
-        /// <summary>
-        /// Variable for kilogram value
-        /// </summary>
-        double kilogram;
-        public Kilogram(double kilogram)
+        double yard;
+        public Yard(double yard)
         {
-            this.kilogram = kilogram;
+            this.yard = yard;
         }
         public double GetValue()
         {
-            return this.kilogram;
+            return this.yard;
         }
     }
 }

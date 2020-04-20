@@ -4,7 +4,7 @@
 // </copyright>
 // <creator name="Anoop kumar"/>
 // --------------------------------------------------------------------------------------------------------------------
-namespace QuantityMeasurement_Web_API.Model
+namespace Model
 {
     using System;
     using System.Collections.Generic;

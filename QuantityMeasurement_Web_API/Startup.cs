@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Manager;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -11,7 +12,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
-using QuantityMeasurement_Web_API.Repository;
+using Repository;
+using Manager;
 
 namespace QuantityMeasurement_Web_API
 {
@@ -28,7 +30,8 @@ namespace QuantityMeasurement_Web_API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddTransient<IConverter,ImpConverter>();
+            services.AddTransient<IQuantityMeasurementRepository,ImpQuantityMeasurementRepository>();
+            services.AddTransient<IQuantityMeasurementManager, ImpQuantitiyMeasurementManager>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });

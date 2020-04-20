@@ -1,12 +1,12 @@
 ﻿
-namespace QuantityMeasurement_Web_API.Repository
+namespace Repository
 {
-    using QuantityMeasurement_Web_API.Model;
+    using Model;
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
-    public class ImpConverter :IConverter
+    public class ImpQuantityMeasurementRepository :IQuantityMeasurementRepository
     {
         /// <summary>
         /// Method for cenverting Celsius to Fahrenheit

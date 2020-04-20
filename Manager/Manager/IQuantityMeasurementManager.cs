@@ -1,12 +1,11 @@
-﻿using QuantityMeasurement_Web_API.Model;
+﻿using Model;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
-namespace QuantityMeasurement_Web_API.Repository
+namespace Manager
 {
-    public interface IConverter
+    public interface IQuantityMeasurementManager
     {
         Inches FeetToInchConverter(Feet feet);
         Feet InchToFeetConverter(Inches inch);
