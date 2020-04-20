@@ -13,68 +13,104 @@ namespace QuantityMeasurement_Web_API.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        private readonly IQuantityMeasurementManager quantityMeasurementManager;
+        private readonly IQuantityMeasurementManager _quantityMeasurementManager;
 
         public ValuesController(IQuantityMeasurementManager quantityMeasurementManager)
         {
-            this.quantityMeasurementManager = quantityMeasurementManager;
+            _quantityMeasurementManager = quantityMeasurementManager;
         }
 
         [Route("FeetToInch")]
         [HttpPost]
-        public ActionResult<double> FeetToInchCoverter(Feet value)
+        public IActionResult FeetToInchCoverter(Feet value)
         {
-            var inchValue = quantityMeasurementManager.FeetToInchConverter(value);
-            return inchValue.GetValue();
+            var inchValue = _quantityMeasurementManager.FeetToInchConverter(value);
+            if (inchValue != null)
+            {
+                return this.Ok(inchValue.GetValue());
+            }
+            else
+            {
+                return this.BadRequest();
+            }
         }
         [Route("InchToFeet")]
         [HttpPost]
-        public ActionResult<double> InchToFeethCoverter(Inches inch)
+        public IActionResult InchToFeethCoverter(Inches inch)
         {
-            var feetValue = quantityMeasurementManager.InchToFeetConverter(inch);
-            return feetValue.GetValue();
+            var feetValue = _quantityMeasurementManager.InchToFeetConverter(inch);
+            if (feetValue != null)
+            {
+             return this.Ok(feetValue.GetValue());
+            }
+            return this.BadRequest();
         }
         [Route("YardToFeet")]
         [HttpPost]
-        public ActionResult<double> YardToFeetConveter(Yard yard)
+        public IActionResult YardToFeetConveter(Yard yard)
         {
-            var feetValue = quantityMeasurementManager.YardToFeetConverter(yard);
-            return feetValue.GetValue();
+            var feetValue = _quantityMeasurementManager.YardToFeetConverter(yard);
+            if (feetValue != null)
+            {
+                return this.Ok(feetValue.GetValue());
+            }
+            return this.BadRequest();
         }
         [Route("YardtoInch")]
         [HttpPost]
         public ActionResult<double> YardToInchConverter(Yard yard)
         {
-            var inchValue = quantityMeasurementManager.YardToInchConverter(yard);
-            return inchValue.GetValue();
+            var inchValue = _quantityMeasurementManager.YardToInchConverter(yard);
+            if (inchValue != null)
+            {
+                return this.Ok(inchValue.GetValue());
+            }
+            return this.BadRequest();
         }
         [Route("KilogramToGram")]
         [HttpPost]
         public ActionResult<double> KilogramToGramConverter(Kilogram kilogram)
         {
-            var gramValue = quantityMeasurementManager.KilogramToGramConverter(kilogram);
-            return gramValue.GetValue();
+            var gramValue = _quantityMeasurementManager.KilogramToGramConverter(kilogram);
+            if (gramValue!=null)
+            {
+                return this.Ok(gramValue.GetValue());
+            }
+            return this.BadRequest();
         }
         [Route("GramToKilogram")]
         [HttpPost]
         public ActionResult<double> GramToKilogramConverter(Gram gram)
         {
-            var kilogramValue = quantityMeasurementManager.GramToKilogramConverter(gram);
-            return kilogramValue.GetValue();
+            var kilogramValue = _quantityMeasurementManager.GramToKilogramConverter(gram);
+            if(kilogramValue != null)
+            {
+                return this.Ok(kilogramValue.GetValue());
+            }
+            return this.BadRequest();
         }
         [Route("CelsiusToFahrenheit")]
         [HttpPost]
         public ActionResult<double> CelsiusToFahrenheitConverter(Celsius celsius)
         {
-            var fahrenheitValue = quantityMeasurementManager.CelsiusToFahrenheitConverter(celsius);
-            return fahrenheitValue.GetValue();
+            var fahrenheitValue = _quantityMeasurementManager.CelsiusToFahrenheitConverter(celsius);
+            if(fahrenheitValue != null)
+            {
+                return this.Ok(fahrenheitValue.GetValue());
+            }
+            return this.BadRequest();
         }
+
         [Route("FahrenheitToCelsius")]
         [HttpPost]
         public ActionResult<double> FahrenheittoCelsiusConverter(Fahranheit fahranheit)
         {
-            var celsiusValue = quantityMeasurementManager.FahrenheitToCelsiusCoverter(fahranheit);
-            return celsiusValue.GetValue();
+            var celsiusValue = _quantityMeasurementManager.FahrenheitToCelsiusCoverter(fahranheit);
+            if (celsiusValue != null)
+            {
+                return this.Ok(celsiusValue.GetValue());
+            }
+            return this.BadRequest();
         }
     }
 }
