@@ -20,3 +20,4 @@ D:\Projects\EmployeeManagement\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfo.
 D:\Projects\EmployeeManagement\Model\obj\Debug\netcoreapp2.1\Model.dll
 D:\Projects\EmployeeManagement\Model\obj\Debug\netcoreapp2.1\Model.pdb
 D:\Projects\EmployeeManagement\Model\obj\Debug\netcoreapp2.1\Model.genruntimeconfig.cache
+D:\Projects\EmployeeManagement\Model\obj\Debug\netcoreapp2.1\Model.csprojAssemblyReference.cache

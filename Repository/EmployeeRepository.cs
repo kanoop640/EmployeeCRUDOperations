@@ -85,7 +85,7 @@ namespace Repository
         /// <returns></returns>
         public bool LoginEmployee(string email,string password)
         {
-            var result = userDBContext.Employees.Where(id => id.Email == email && id.Password == password);
+            var result = userDBContext.Employees.Where(id => id.Email == email && id.Password == password).FirstOrDefault();
             if (result != null)
             {
                 return true;

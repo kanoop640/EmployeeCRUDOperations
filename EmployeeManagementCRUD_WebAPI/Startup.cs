@@ -51,6 +51,11 @@ namespace EmployeeManagementCRUD_WebAPI
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
             });
+            services.AddCors(opt=> {
+                opt.AddPolicy("CorsPolicy", policy => { 
+                    policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000", "file:///D:/Projects/jQueryTutorial/index.html");
+                });
+            });
         }
 
 
@@ -69,6 +74,7 @@ namespace EmployeeManagementCRUD_WebAPI
             }
             app.UseStaticFiles();
             app.UseHttpsRedirection();
+            app.UseCors("CorsPolicy");
             app.UseMvc(routes => {
                 routes.MapRoute(
                     name: "default",
