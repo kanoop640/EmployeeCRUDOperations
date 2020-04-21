@@ -19,6 +19,7 @@ namespace QuantityMeasurement_Web_API
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+            .UseKestrel()
+            .UseStartup<Startup>();
     }
 }

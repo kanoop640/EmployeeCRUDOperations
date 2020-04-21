@@ -13,7 +13,6 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Repository;
-using Manager;
 
 namespace QuantityMeasurement_Web_API
 {
