@@ -21,8 +21,9 @@ namespace Repository.Migrations
 
             modelBuilder.Entity("ParkingLotModel.ParkingModel", b =>
                 {
-                    b.Property<string>("SlotNumber")
-                        .ValueGeneratedOnAdd();
+                    b.Property<int>("SlotNumber")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("CheckIn");
 

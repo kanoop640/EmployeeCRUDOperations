@@ -13,7 +13,7 @@ namespace ParkingLotModel
     using System.Text;
     public class ParkingModel
     {
-        string slotNumber;
+        int slotNumber;
         double ratePerHour;
         DateTime checkIn;
         DateTime checkOut;
@@ -22,7 +22,7 @@ namespace ParkingLotModel
 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
-        public string SlotNumber
+        public int SlotNumber
         {
             get
             {

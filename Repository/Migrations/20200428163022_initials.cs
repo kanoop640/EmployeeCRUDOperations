@@ -1,9 +1,10 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Repository.Migrations
 {
-    public partial class initial : Migration
+    public partial class initials : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -11,12 +12,13 @@ namespace Repository.Migrations
                 name: "Parkings",
                 columns: table => new
                 {
-                    SlotNumber = table.Column<string>(nullable: false),
+                    SlotNumber = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     RatePerHour = table.Column<double>(nullable: false),
                     CheckIn = table.Column<DateTime>(nullable: false),
-                    CheckOut = table.Column<DateTime>(nullable: false),
+                    CheckOut = table.Column<DateTime>(nullable: true),
                     VehicleNumber = table.Column<string>(nullable: true),
-                    ParkingType = table.Column<string>(nullable: true)
+                    ParkingType = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {

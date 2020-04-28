@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using ParkingLotModel;
 using Repository;
+using Repository.Police;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -13,23 +15,30 @@ namespace Parking_lot_Problem_Web_API.Controllers
     [ApiController]
     public class ParkingController : Controller
     {
-        private readonly IParkingRepository parkingRepository;
+        private readonly IPoliceParking policeParking;
 
-        public ParkingController(IParkingRepository parkingRepository)
+        public ParkingController(IPoliceParking policeParking)
         {
-            this.parkingRepository = parkingRepository;
+            this.policeParking = policeParking;
         }
 
-        [Route("Parking")]
+        [Route("PoliceParking")]
         [HttpPost]
-        public async Task<IActionResult>  Parking(string vehicleNumber, double ratePerHour)
+        public async Task<IActionResult>  PoliceParking(ParkingModel parkingModel)
         {
-            var result = await this.parkingRepository.Parking(vehicleNumber, ratePerHour);
+            var result = await this.policeParking.Parking(parkingModel);
             if (result == 1)
             {
                 return this.Ok();
             }
             return this.BadRequest();
+        }
+        [Route("PloliceUnparking")]
+        [HttpDelete]
+        public ParkingModel DeleteParking(int id)
+        {
+            var result = policeParking.DeleteParking(id);
+            return result;
         }
     }
 }

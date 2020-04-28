@@ -14,6 +14,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Repository;
 using Repository.Context;
+using Repository.Police;
 
 namespace Parking_lot_Problem_Web_API
 {
@@ -31,7 +32,7 @@ namespace Parking_lot_Problem_Web_API
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddDbContext<UserDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("UserDbConnection")));
-            services.AddTransient<IParkingRepository, ParkingRepository>();
+            services.AddTransient<IPoliceParking, PoliceParking>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("V1", new OpenApiInfo { Title = "My API", Version = "V1" });
