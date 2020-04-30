@@ -16,9 +16,10 @@ namespace Repository.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     RatePerHour = table.Column<double>(nullable: false),
                     CheckIn = table.Column<DateTime>(nullable: false),
-                    CheckOut = table.Column<DateTime>(nullable: true),
-                    VehicleNumber = table.Column<string>(nullable: true),
-                    ParkingType = table.Column<string>(nullable: false)
+                    CheckOut = table.Column<DateTime>(nullable: false),
+                    VehicleNumber = table.Column<string>(nullable: false),
+                    ParkingType = table.Column<string>(nullable: true),
+                    DriverType = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

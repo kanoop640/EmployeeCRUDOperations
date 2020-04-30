@@ -13,11 +13,11 @@ namespace Parking_lot_Problem_Web_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ParkingController : Controller
+    public class PoliceParkingController : Controller
     {
         private readonly IPoliceParking policeParking;
 
-        public ParkingController(IPoliceParking policeParking)
+        public PoliceParkingController(IPoliceParking policeParking)
         {
             this.policeParking = policeParking;
         }

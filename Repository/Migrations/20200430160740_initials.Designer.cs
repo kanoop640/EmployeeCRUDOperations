@@ -10,7 +10,7 @@ using Repository.Context;
 namespace Repository.Migrations
 {
     [DbContext(typeof(UserDBContext))]
-    [Migration("20200428163022_initials")]
+    [Migration("20200430160740_initials")]
     partial class initials
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -30,6 +30,8 @@ namespace Repository.Migrations
                     b.Property<DateTime>("CheckIn");
 
                     b.Property<DateTime>("CheckOut");
+
+                    b.Property<string>("DriverType");
 
                     b.Property<string>("ParkingType");
 

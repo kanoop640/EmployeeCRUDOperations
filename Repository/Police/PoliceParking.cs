@@ -15,6 +15,8 @@ namespace Repository.Police
         {
             this.userDBContext = userDBContext;
         }
+        private readonly int Vallet_Parking_Charge = 50;
+        private readonly int Minimum_Parking_Charge = 30;
         public Task<int> Parking(ParkingModel parkingModel)
         {
             parkingModel.CheckIn = DateTime.Now;
@@ -40,13 +42,13 @@ namespace Repository.Police
         public double ParkingCharges(int slotNumber)
         {
             var vehicleDetail = userDBContext.Parkings.Find(slotNumber);
-            if (vehicleDetail.ParkingType == "wallet")
+            if (vehicleDetail.ParkingType == "valet")
             {
                 var entery = vehicleDetail.CheckIn;
                 var exit = DateTime.Now;
                 double hours = (exit - entery).TotalHours;
-                var parkingCharges = vehicleDetail.RatePerHour * hours * 50;
-                return Math.Min(parkingCharges, 50);
+                var parkingCharges = vehicleDetail.RatePerHour * hours * Vallet_Parking_Charge;
+                return Math.Min(parkingCharges, Minimum_Parking_Charge);
             }
             else
             {
@@ -54,7 +56,7 @@ namespace Repository.Police
                 var exit = DateTime.Now;
                 double hours = (exit - entery).TotalHours;
                 var parkingCharges = vehicleDetail.RatePerHour * hours;
-                return Math.Min(parkingCharges, 20);
+                return Math.Min(parkingCharges, Minimum_Parking_Charge);
             }
             
         }

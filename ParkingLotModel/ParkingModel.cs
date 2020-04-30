@@ -19,6 +19,7 @@ namespace ParkingLotModel
         DateTime checkOut;
         string vehicleNumber;
         string parkingType;
+        string driverType;
 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
@@ -57,6 +58,11 @@ namespace ParkingLotModel
         {
             get { return parkingType; }
             set { parkingType = value; }
+        }
+        public string DriverType
+        {
+            get { return driverType; }
+            set { driverType = value; }
         }
     }
 }

@@ -29,6 +29,8 @@ namespace Repository.Migrations
 
                     b.Property<DateTime>("CheckOut");
 
+                    b.Property<string>("DriverType");
+
                     b.Property<string>("ParkingType");
 
                     b.Property<double>("RatePerHour");
