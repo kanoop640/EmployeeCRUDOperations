@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Repository.Police
 {
-    public interface IPoliceParking
+    public interface IPoliceParkingRepo
     {
         Task<int> Parking(ParkingModel parkingModel);
         double Unparking(int id);

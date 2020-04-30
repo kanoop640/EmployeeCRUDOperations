@@ -9,7 +9,6 @@ namespace ParkingManager.Manager
     public interface IPoliceParkingManager
     {
         Task<int> PoliceParking(ParkingModel parkingModel);
-        ParkingModel PoliceUnparking(int slotNumber);
-        double PoliceParkingCharges(int slotNumber);
+        double PoliceUnparking(int slotNumber);
     }
 }

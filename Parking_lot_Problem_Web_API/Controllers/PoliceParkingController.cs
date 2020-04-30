@@ -15,9 +15,9 @@ namespace Parking_lot_Problem_Web_API.Controllers
     [ApiController]
     public class PoliceParkingController : Controller
     {
-        private readonly IPoliceParking policeParking;
+        private readonly IPoliceParkingRepo policeParking;
 
-        public PoliceParkingController(IPoliceParking policeParking)
+        public PoliceParkingController(IPoliceParkingRepo policeParking)
         {
             this.policeParking = policeParking;
         }
@@ -33,11 +33,11 @@ namespace Parking_lot_Problem_Web_API.Controllers
             }
             return this.BadRequest();
         }
-        [Route("PloliceUnparking")]
+        [Route("PoliceUnparking")]
         [HttpDelete]
-        public ParkingModel DeleteParking(int id)
+        public ActionResult<double> PoliceUnparking(int slotNumber)
         {
-            var result = policeParking.DeleteParking(id);
+            var result = policeParking.Unparking(slotNumber);
             return result;
         }
     }

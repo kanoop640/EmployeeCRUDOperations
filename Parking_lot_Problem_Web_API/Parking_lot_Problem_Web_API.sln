@@ -9,7 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkingLotModel", "..\Parki
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "..\Repository\Repository.csproj", "{CB202F0E-1E23-4874-989D-656975580E7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingManager", "..\ParkingManager\ParkingManager.csproj", "{00A5D0B4-EB6C-4914-9D6E-FE4B75B2DF9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkingManager", "..\ParkingManager\ParkingManager.csproj", "{00A5D0B4-EB6C-4914-9D6E-FE4B75B2DF9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5FD19860-AE43-4D08-AA32-A02C890DD65A}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

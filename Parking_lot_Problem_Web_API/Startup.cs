@@ -32,7 +32,7 @@ namespace Parking_lot_Problem_Web_API
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddDbContext<UserDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("UserDbConnection")));
-            services.AddTransient<IPoliceParking, PoliceParking>();
+            services.AddTransient<IPoliceParkingRepo, PoliceParkingReop>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("V1", new OpenApiInfo { Title = "My API", Version = "V1" });
