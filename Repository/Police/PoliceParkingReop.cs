@@ -66,5 +66,18 @@ namespace Repository.Police
                 throw new Exception("Vehicle is not found");
             }
         }
+        public IEnumerable<ParkingModel> GetAllVehicle()
+        {
+            try
+            {
+                var vehicles = userDBContext.Parkings;
+                return vehicles;
+            }
+            catch (Exception)
+            {
+
+                throw new Exception("There is no vehicle in the parking");
+            }
+        }
     }
 }
