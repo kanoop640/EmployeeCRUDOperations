@@ -10,6 +10,6 @@ namespace Repository.Police
     public interface IPoliceParking
     {
         Task<int> Parking(ParkingModel parkingModel);
-        ParkingModel DeleteParking(int id);
+        double Unparking(int id);
     }
 }

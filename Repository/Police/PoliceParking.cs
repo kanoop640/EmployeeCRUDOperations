@@ -29,36 +29,32 @@ namespace Repository.Police
             return result;
 
         }
-        public ParkingModel DeleteParking(int slotNumber)
+        public double Unparking(int slotNumber)
         {
-           ParkingModel parkingModel= userDBContext.Parkings.Find(slotNumber);
-            if (parkingModel != null)
+           ParkingModel vehicleDetail= userDBContext.Parkings.Find(slotNumber);
+            try
             {
-                userDBContext.Parkings.Remove(parkingModel);
-                userDBContext.SaveChangesAsync();
+                if (vehicleDetail.ParkingType == "valet")
+                {
+                    var entery = vehicleDetail.CheckIn;
+                    var exit = DateTime.Now;
+                    double hours = (exit - entery).TotalHours;
+                    var parkingCharges = vehicleDetail.RatePerHour * hours * Vallet_Parking_Charge;
+                    return Math.Min(parkingCharges, Minimum_Parking_Charge);
+                }
+                else
+                {
+                    var entery = vehicleDetail.CheckIn;
+                    var exit = DateTime.Now;
+                    double hours = (exit - entery).TotalHours;
+                    var parkingCharges = vehicleDetail.RatePerHour * hours;
+                    return Math.Min(parkingCharges, Minimum_Parking_Charge);
+                }
             }
-            return parkingModel;
-        }
-        public double ParkingCharges(int slotNumber)
-        {
-            var vehicleDetail = userDBContext.Parkings.Find(slotNumber);
-            if (vehicleDetail.ParkingType == "valet")
+            catch (Exception)
             {
-                var entery = vehicleDetail.CheckIn;
-                var exit = DateTime.Now;
-                double hours = (exit - entery).TotalHours;
-                var parkingCharges = vehicleDetail.RatePerHour * hours * Vallet_Parking_Charge;
-                return Math.Min(parkingCharges, Minimum_Parking_Charge);
+                throw new Exception("Vehicle is not found");
             }
-            else
-            {
-                var entery = vehicleDetail.CheckIn;
-                var exit = DateTime.Now;
-                double hours = (exit - entery).TotalHours;
-                var parkingCharges = vehicleDetail.RatePerHour * hours;
-                return Math.Min(parkingCharges, Minimum_Parking_Charge);
-            }
-            
         }
     }
 }
