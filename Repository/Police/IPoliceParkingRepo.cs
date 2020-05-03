@@ -11,5 +11,6 @@ namespace Repository.Police
     {
         Task<int> Parking(ParkingModel parkingModel);
         double Unparking(int id);
+        IEnumerable<ParkingModel> GetAllVehicle();
     }
 }

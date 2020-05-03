@@ -35,10 +35,20 @@ namespace Parking_lot_Problem_Web_API.Controllers
         }
         [Route("PoliceUnparking")]
         [HttpDelete]
-        public ActionResult<double> PoliceUnparking(int slotNumber)
+        public ActionResult PoliceUnparking(int slotNumber)
         {
             var result = policeParking.Unparking(slotNumber);
-            return result;
+            if (result > 0)
+            {
+                return this.Ok(result);
+            }
+            return this.BadRequest();
+        }
+        [Route("GetAllVehicle")]
+        [HttpGet]
+        public IEnumerable<ParkingModel> GetAllVehicle()
+        {
+            return policeParking.GetAllVehicle();
         }
     }
 }

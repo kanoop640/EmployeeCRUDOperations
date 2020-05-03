@@ -21,63 +21,62 @@ namespace Repository.Police
         int count = 0;
         public Task<int> Parking(ParkingModel parkingModel)
         {
-            parkingModel.CheckIn = DateTime.Now;
-            userDBContext.Parkings.Add(parkingModel);
-            var result = userDBContext.SaveChangesAsync();
-            return result;
-
-        }
-        public int GetSlot()
+                if (GetSlot())
+                {
+                    parkingModel.CheckIn = DateTime.Now;                                                                                    
+                    userDBContext.Parkings.Add(parkingModel);
+                    var result = userDBContext.SaveChangesAsync();
+                    return result;
+                }
+            throw new Exception("Lot is full");
+        }                                                                                                                              
+        public bool GetSlot()
         {
             var vehicles = userDBContext.Parkings;
             foreach(ParkingModel vehicle in vehicles)
             {
                 if (vehicle.DriverType == "Police")
                 {
-                    count++;
+                    vehicleList.Add(vehicle);
                 }
             }
-            return count;
+            if (vehicleList.Count != vehicleList.Capacity)
+            {
+                return true;
+            }
+            return false;
         }
         public double Unparking(int slotNumber)
         {
-           ParkingModel vehicleDetail= userDBContext.Parkings.Find(slotNumber);
             try
             {
+                var vehicleDetail = userDBContext.Parkings.Find(slotNumber);
+                var enteryTime = vehicleDetail.CheckIn;
+                var exitTime = DateTime.Now;
+                double hours = (exitTime - enteryTime).TotalHours;
                 if (vehicleDetail.ParkingType == "valet")
                 {
-                    var entery = vehicleDetail.CheckIn;
-                    var exit = DateTime.Now;
-                    double hours = (exit - entery).TotalHours;
-                    var parkingCharges = vehicleDetail.RatePerHour * hours * Vallet_Parking_Charge;
-                    return Math.Min(parkingCharges, Minimum_Parking_Charge);
+                    var charges = vehicleDetail.RatePerHour * hours * Vallet_Parking_Charge;
+                    userDBContext.Parkings.Remove(vehicleDetail);
+                    userDBContext.SaveChangesAsync();
+                    return Math.Max(charges, Minimum_Parking_Charge);
                 }
-                else
-                {
-                    var entery = vehicleDetail.CheckIn;
-                    var exit = DateTime.Now;
-                    double hours = (exit - entery).TotalHours;
-                    var parkingCharges = vehicleDetail.RatePerHour * hours;
-                    return Math.Min(parkingCharges, Minimum_Parking_Charge);
-                }
+
+                var parkingCharge = vehicleDetail.RatePerHour * hours;
+                userDBContext.Parkings.Remove(vehicleDetail);
+                userDBContext.SaveChangesAsync();
+                return Math.Max(parkingCharge, Minimum_Parking_Charge);
             }
             catch (Exception)
             {
                 throw new Exception("Vehicle is not found");
             }
         }
+      
         public IEnumerable<ParkingModel> GetAllVehicle()
         {
-            try
-            {
                 var vehicles = userDBContext.Parkings;
                 return vehicles;
-            }
-            catch (Exception)
-            {
-
-                throw new Exception("There is no vehicle in the parking");
-            }
         }
     }
 }
