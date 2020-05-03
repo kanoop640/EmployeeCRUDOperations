@@ -17,7 +17,7 @@ namespace Repository.Police
         }
         private readonly int Vallet_Parking_Charge = 50;
         private readonly int Minimum_Parking_Charge = 30;
-        List<ParkingModel> vehicleList = new List<ParkingModel>(2);
+        List<ParkingModel> vehicleList = new List<ParkingModel>(3);
         int count = 0;
         public Task<int> Parking(ParkingModel parkingModel)
         {

@@ -29,7 +29,7 @@ namespace Parking_lot_Problem_Web_API.Controllers
             var result = await this.policeParking.Parking(parkingModel);
             if (result == 1)
             {
-                return this.Ok();
+                return this.Ok(parkingModel);
             }
             return this.BadRequest();
         }
