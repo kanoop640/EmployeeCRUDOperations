@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Repository.Security
 {
-    public interface ISecurityParking
+    public interface ISecurityParkingRopo
     {
         Task<int> SecurityParking(ParkingModel parkingModel);
         double SecurityUnparking(int slotNumber);
