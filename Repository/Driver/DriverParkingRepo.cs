@@ -7,17 +7,17 @@ using System.Threading.Tasks;
 
 namespace Repository.Driver
 {
-    public class DriverRepo : IDriverRepo
+    public class DriverParkingRepo : IDriverParkingRepo
     {
         private readonly UserDBContext userDBContext;
 
-        public DriverRepo(UserDBContext userDBContext)
+        public DriverParkingRepo(UserDBContext userDBContext)
         {
             this.userDBContext = userDBContext;
         }
         private readonly int Vallet_Parking_Charge = 50;
         private readonly int Minimum_Parking_Charge = 30;
-        List<ParkingModel> vehicleList = new List<ParkingModel>(3);
+        List<ParkingModel> vehicleList = new List<ParkingModel>(25);
         public Task<int> DriverParking(ParkingModel parkingModel)
         {
             if (GetSlot())

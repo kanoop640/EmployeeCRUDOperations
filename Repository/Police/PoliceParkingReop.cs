@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Repository.Police
 {
-    public class PoliceParkingReop : IPoliceParkingRepo
+    public class PoliceParkingReop : IsecurityParkingManager
     {
         private readonly UserDBContext userDBContext;
 
@@ -17,8 +17,7 @@ namespace Repository.Police
         }
         private readonly int Vallet_Parking_Charge = 50;
         private readonly int Minimum_Parking_Charge = 30;
-        List<ParkingModel> vehicleList = new List<ParkingModel>(3);
-        int count = 0;
+        List<ParkingModel> vehicleList = new List<ParkingModel>(25);
         public Task<int> Parking(ParkingModel parkingModel)
         {
                 if (GetSlot())

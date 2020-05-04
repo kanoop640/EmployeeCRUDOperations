@@ -9,9 +9,9 @@ namespace ParkingManager.Manager
 {
     public class PoliceParkingManager : IPoliceParkingManager
     {
-        private readonly IPoliceParkingRepo policeParkingRepo;
+        private readonly Repository.Police.IsecurityParkingManager policeParkingRepo;
 
-        public PoliceParkingManager(IPoliceParkingRepo policeParkingRepo)
+        public PoliceParkingManager(Repository.Police.IsecurityParkingManager policeParkingRepo)
         {
             this.policeParkingRepo = policeParkingRepo;
         }

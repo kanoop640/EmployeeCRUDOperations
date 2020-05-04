@@ -13,42 +13,37 @@ namespace Parking_lot_Problem_Web_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PoliceParkingController : Controller
+    public class SecurityParkingController : Controller
     {
-        private readonly IsecurityParkingManager policeManager;
+        private readonly IsecurityParkingManager securityManager;
 
-        public PoliceParkingController(IsecurityParkingManager pollicemanager)
+        public SecurityParkingController(IsecurityParkingManager securityManager)
         {
-            this.policeManager = pollicemanager;
+            this.securityManager = securityManager;
         }
 
-        [Route("PoliceParking")]
+        [Route("SecurityParking")]
         [HttpPost]
-        public async Task<IActionResult>  PoliceParking(ParkingModel parkingModel)
+        public async Task<IActionResult> SecurityParking(ParkingModel parkingModel)
         {
-            var result = await this.policeManager.Parking(parkingModel);
+            var result = await this.securityManager.Parking(parkingModel);
             if (result == 1)
             {
                 return this.Ok(parkingModel);
             }
             return this.BadRequest();
         }
-        [Route("PoliceUnparking")]
+        [Route("SecurityUnparking")]
         [HttpDelete]
-        public ActionResult PoliceUnparking(int id)
+        public ActionResult SecurityUnparking(int id)
         {
-            var result = policeManager.Unparking(id);
+            var result = securityManager.Unparking(id);
             if (result > 0)
             {
                 return this.Ok(result);
             }
             return this.BadRequest();
         }
-        [Route("GetAllVehicle")]
-        [HttpGet]
-        public IEnumerable<ParkingModel> GetAllVehicle()
-        {
-            return policeManager.GetAllVehicle();
-        }
+        
     }
 }

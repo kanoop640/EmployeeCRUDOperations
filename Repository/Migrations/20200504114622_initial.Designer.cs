@@ -10,8 +10,8 @@ using Repository.Context;
 namespace Repository.Migrations
 {
     [DbContext(typeof(UserDBContext))]
-    [Migration("20200430160740_initials")]
-    partial class initials
+    [Migration("20200504114622_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,7 +23,7 @@ namespace Repository.Migrations
 
             modelBuilder.Entity("ParkingLotModel.ParkingModel", b =>
                 {
-                    b.Property<int>("SlotNumber")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -37,9 +37,15 @@ namespace Repository.Migrations
 
                     b.Property<double>("RatePerHour");
 
+                    b.Property<string>("SlotNumber");
+
+                    b.Property<string>("VehicleColor");
+
+                    b.Property<string>("VehicleModel");
+
                     b.Property<string>("VehicleNumber");
 
-                    b.HasKey("SlotNumber");
+                    b.HasKey("Id");
 
                     b.ToTable("Parkings");
                 });

@@ -17,7 +17,7 @@ namespace Repository.Owner
         }
         private readonly int Vallet_Parking_Charge = 50;
         private readonly int Minimum_Parking_Charge = 30;
-        List<ParkingModel> vehicleList = new List<ParkingModel>(3);
+        List<ParkingModel> vehicleList = new List<ParkingModel>(25);
         public IEnumerable<ParkingModel> GetAllVehicle()
         {
             var vehicles = userDBContext.Parkings;

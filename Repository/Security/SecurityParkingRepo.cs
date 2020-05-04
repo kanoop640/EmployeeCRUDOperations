@@ -17,11 +17,12 @@ namespace Repository.Security
         }
         private readonly int Vallet_Parking_Charge = 50;
         private readonly int Minimum_Parking_Charge = 30;
-        public double SecurityUnparking(int slotNumber)
+        List<ParkingModel> vehicleList = new List<ParkingModel>(25);
+        public double SecurityUnparking(int id)
         {
             try
             {
-                var vehicleDetail = userDBContext.Parkings.Find(slotNumber);
+                var vehicleDetail = userDBContext.Parkings.Find(id);
                 var enteryTime = vehicleDetail.CheckIn;
                 var exitTime = DateTime.Now;
                 double hours = (exitTime - enteryTime).TotalHours;
@@ -46,12 +47,30 @@ namespace Repository.Security
 
         public Task<int> SecurityParking(ParkingModel parkingModel)
         {
-            var entryTime = DateTime.Now;
-            parkingModel.CheckIn = entryTime;
-            userDBContext.Parkings.Add(parkingModel);
-            var result = userDBContext.SaveChangesAsync();
-            return result;
-            
+            if (GetSlot())
+            {
+                parkingModel.CheckIn = DateTime.Now;
+                userDBContext.Parkings.Add(parkingModel);
+                var result = userDBContext.SaveChangesAsync();
+                return result;
+            }
+            throw new Exception("Lot is full");
+        }
+        public bool GetSlot()
+        {
+            var vehicles = userDBContext.Parkings;
+            foreach (ParkingModel vehicle in vehicles)
+            {
+                if (vehicle.DriverType == "Police")
+                {
+                    vehicleList.Add(vehicle);
+                }
+            }
+            if (vehicleList.Count != vehicleList.Capacity)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

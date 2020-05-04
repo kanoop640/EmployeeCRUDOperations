@@ -21,9 +21,9 @@ namespace ParkingManager.Manager.Security
             return securityParkingRopo.SecurityParking(parkingModel);
         }
 
-        public double SecurityUnparking(int slotNumber)
+        public double SecurityUnparking(int id)
         {
-            return securityParkingRopo.SecurityUnparking(slotNumber);
+            return securityParkingRopo.SecurityUnparking(id);
         }
     }
 }

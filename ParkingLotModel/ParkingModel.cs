@@ -13,17 +13,25 @@ namespace ParkingLotModel
     using System.Text;
     public class ParkingModel
     {
-        int slotNumber;
+        int id;
+        string slotNumber;
         double ratePerHour;
         DateTime checkIn;
         DateTime checkOut;
         string vehicleNumber;
         string parkingType;
         string driverType;
+        string vehicleColor;
+        string vehicleModel;
 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
-        public int SlotNumber
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+        public string SlotNumber
         {
             get
             {
@@ -63,6 +71,16 @@ namespace ParkingLotModel
         {
             get { return driverType; }
             set { driverType = value; }
+        }
+        public string VehicleColor
+        {
+            get { return vehicleColor; }
+            set { vehicleColor = value; }
+        }
+        public string VehicleModel
+        {
+            get { return vehicleModel; }
+            set { vehicleModel = value; }
         }
     }
 }
